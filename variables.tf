@@ -60,7 +60,7 @@ variable "test_name" {
   description = "The name"
   type        = string
   default     = "khatrig"
-  
+}
   ########
 
 variable "table1_name" {
