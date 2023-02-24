@@ -4,6 +4,9 @@ resource "aws_dynamodb_table" "example_table_1" {
 
   hash_key = var.table1_hash_key
   range_key = var.table1_range_key
+  
+  server_side_encryption {
+    enabled = true
 
   attribute {
     name = var.table1_hash_key
@@ -21,6 +24,9 @@ resource "aws_dynamodb_table" "example_table_1" {
 resource "aws_dynamodb_table" "example_table_2" {
   name         = var.table2_name
   billing_mode = var.billing_mode
+  
+  server_side_encryption {
+    enabled = true
 
   hash_key = var.table2_hash_key
   range_key = var.table2_range_key
