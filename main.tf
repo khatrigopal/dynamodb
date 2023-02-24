@@ -7,7 +7,7 @@ resource "aws_dynamodb_table" "example_table_1" {
   
   server_side_encryption {
     enabled = true
-
+  }
   attribute {
     name = var.table1_hash_key
     type = "S"
@@ -27,7 +27,7 @@ resource "aws_dynamodb_table" "example_table_2" {
   
   server_side_encryption {
     enabled = true
-
+  }
   hash_key = var.table2_hash_key
   range_key = var.table2_range_key
 
